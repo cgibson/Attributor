@@ -8,6 +8,7 @@
 #ifndef SUBSYSTEM_H_
 #define SUBSYSTEM_H_
 
+#include "Event.h"
 #include <string>
 
 class Entity;
@@ -37,6 +38,7 @@ public:
 	std::string getName() { return "movable_component"; }
 	void update();
 	void init();
+	void hello(Event* e);
 };
 
 #endif /* SUBSYSTEM_H_ */
